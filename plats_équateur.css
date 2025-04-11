@@ -1,0 +1,100 @@
+footer {
+    background-color: rgb(246, 246, 246);
+    color: #3B1E0F;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(250, 223, 10);
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 48px;
+    color: #9c6b30;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 4px 4px 0px #c1a172;
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 0px #c1a172;
+}
+
+/* Logo */
+.image {
+    height: auto;
+    max-height: 120px;
+    width: auto;
+    position:absolute;
+    top: 5;
+    right: 0;
+}
+
+.image2{
+    height: auto;
+    max-height: 100px;
+    width: auto;
+    position:absolute;
+    top: 5;
+    left:2%; 
+}
+
+
+/* plats et ingrédients*/
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .plat {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fefefe;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .plat img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .plat h2 {
+    margin-top: 10px;
+    color: #b22222;
+  }
+  
+  .description {
+    font-style: italic;
+    margin: 10px 0;
+  }
+  
+  .ingredients {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  

@@ -1,0 +1,199 @@
+/* Réinitialisation des marges/paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Merriweather';
+}
+
+/* --- HEADER --- */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(226, 210, 184);
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 48px;
+    color: #9c6b30;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 4px 4px 0px #c1a172;
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 0px #c1a172;
+}
+
+/* Logo */
+.image {
+    height: auto;
+    max-height: 120px;
+    width: auto;
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+/* --- CONTAINER ET LAYOUT --- */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  /* Prendre toute la hauteur de la fenêtre */
+    width: 100%;
+}
+
+/* Contenu général */
+.content {
+    display: flex;
+    flex: 1;
+}
+
+/* Menu latéral */
+.box {
+    width: 20%;
+    background-color: rgb(226, 210, 184);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contenu principal */
+.resto {
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.image3{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Merriweather';
+}
+
+
+/* --- FOOTER --- */
+footer {
+    background-color: rgb(246, 246, 246);
+    color: #3B1E0F;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style général du bouton */
+.btn {
+    background-color: #9c6b30; /* Couleur de fond dorée/brun */
+    color: white; /* Texte blanc */
+    font-family: 'Merriweather', serif; /* Police élégante */
+    font-size: 16px; /* Taille du texte */
+    padding: 12px 30px; /* Espacement interne (padding) */
+    border: none; /* Pas de bordure */
+    border-radius: 30px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointer pour indiquer que c'est cliquable */
+    transition: all 0.3s ease-in-out; /* Transition pour des effets doux au survol */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    position:absolute;
+    top: 5;
+    left: 0;
+}
+
+/* Effet au survol */
+.btn:hover {
+    background-color: #6e4b2c; /* Couleur de fond plus foncée au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre portée */
+}
+
+/* Effet au focus (quand l'utilisateur clique sur le bouton) */
+.btn:focus {
+    outline: none; /* Supprimer le contour par défaut */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3); /* Ajouter un contour lumineux */
+}
+
+
+.description {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Merriweather';
+}
+
+.drapeaux {
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    gap: 40px;                /* espace entre les deux images */
+    flex-wrap: wrap;          /* pour qu'elles passent à la ligne sur petit écran */
+    margin-top: 20px;
+}
+
+
+.horaires {
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.horaires h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.horaires table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.horaires th,
+.horaires td {
+    border: 1px solid #ccc;
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.horaires th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+
+.horaires tr:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
